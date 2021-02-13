@@ -1,3 +1,4 @@
+#if !RELEASE
 using Xunit;
 
 namespace ImageComparer
@@ -10,10 +11,11 @@ namespace ImageComparer
             Assert.Equal(4, Program.Adder(1, 3));
         }
 
-        [Fact]
-        internal void FailingTestAdder()
-        {
-            Assert.Equal(4, Program.Adder(1, 1));
-        }
+        //[Fact]
+        //internal void FailingTestAdder()
+        //{
+        //    Assert.Equal(4, Program.Adder(1, 1));
+        //}
     }
 }
+#endif
