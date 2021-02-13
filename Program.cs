@@ -4,9 +4,14 @@ namespace ImageComparer
 {
     class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+        }
+
+        internal static int Adder(int a, int b)
+        {
+            return a + b;
         }
     }
 }
